@@ -1,13 +1,17 @@
-# Bangladesh Government Portal Redesign (Frontend Concept)
+# Bangladesh Government Portal Redesign (Frontend Prototype)
 
-A modern, minimalist frontend redesign concept for the Bangladesh National Portal homepage.
+Modern, clean UI/UX redesign concept inspired by public-sector portals.
 
 ## Run locally
-
-Open `index.html` directly in a browser, or serve with a static server:
 
 ```bash
 python3 -m http.server 4173
 ```
 
-Then visit `http://localhost:4173`.
+Open `http://localhost:4173`.
+
+## Included
+
+- Multi-level navbar with dropdown menus
+- Search box that filters services, ministry cards, links, and notices
+- Bangladesh-focused sections: e-services, ministries, forms, district links, and notices
