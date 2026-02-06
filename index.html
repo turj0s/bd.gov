@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bangladesh National Portal — Modern UI Prototype</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <p>গণপ্রজাতন্ত্রী বাংলাদেশ সরকার | Government of the People's Republic of Bangladesh</p>
+        <div class="top-links">
+          <a href="#">বাংলা</a>
+          <a href="#">English</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar-wrap">
+      <div class="container navbar-main">
+        <a href="#" class="brand">
+          <span class="flag" aria-hidden="true"></span>
+          <span>
+            <strong>বাংলাদেশ জাতীয় তথ্য বাতায়ন</strong>
+            <small>Bangladesh National Portal</small>
+          </span>
+        </a>
+
+        <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="main-nav">☰ Menu</button>
+
+        <div class="search-area">
+          <label for="site-search" class="sr-only">Search website</label>
+          <input id="site-search" type="search" placeholder="Search services, ministries, forms, notices..." />
+          <button id="search-btn" class="search-btn">Search</button>
+        </div>
+      </div>
+
+      <div id="main-nav" class="container nav-menu" role="navigation" aria-label="Primary navigation">
+        <div class="dropdown">
+          <button class="dropbtn">Home</button>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">About Bangladesh ▾</button>
+          <div class="dropdown-content">
+            <a href="#">History & Heritage</a>
+            <a href="#">National Symbols</a>
+            <a href="#">Constitution</a>
+            <a href="#">Vision 2041</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Government ▾</button>
+          <div class="dropdown-content">
+            <a href="#ministries">Ministries & Divisions</a>
+            <a href="#">Cabinet Division</a>
+            <a href="#">Departments & Agencies</a>
+            <a href="#">District Portals</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">e-Services ▾</button>
+          <div class="dropdown-content">
+            <a href="#services">Citizen e-Services</a>
+            <a href="#forms">Forms Download</a>
+            <a href="#">NOC / Certificates</a>
+            <a href="#">Online Applications</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Notices ▾</button>
+          <div class="dropdown-content">
+            <a href="#updates">Latest Notices</a>
+            <a href="#">Circulars</a>
+            <a href="#">Tender</a>
+            <a href="#">Press Release</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Contact</button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero container">
+        <div class="hero-content searchable" data-keywords="bangladesh national portal smart bangladesh prime minister office citizen services">
+          <p class="eyebrow">Citizen-first digital governance</p>
+          <h1>One clean portal for trusted public services in Bangladesh.</h1>
+          <p class="hero-text">
+            Access service information, national directories, emergency hotlines, notices, and downloadable forms in a
+            simple and modern interface optimized for desktop, tablet, and mobile devices.
+          </p>
+          <div class="hero-actions">
+            <a href="#services" class="btn btn-primary">Explore e-Services</a>
+            <a href="#updates" class="btn btn-secondary">Latest Notices</a>
+          </div>
+          <div class="hero-highlights">
+            <span>64 District Portals</span>
+            <span>50+ Ministries</span>
+            <span>24/7 Helpline Support</span>
+          </div>
+        </div>
+        <aside class="hero-media searchable" data-keywords="jatiya sangsad bhaban dhaka bangladesh landmark parliament image">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Jatiyo_Sangsad_Bhaban_%28National_Parliament%29.jpg/1280px-Jatiyo_Sangsad_Bhaban_%28National_Parliament%29.jpg"
+            alt="Jatiya Sangsad Bhaban, Dhaka"
+          />
+          <div class="media-caption">Jatiya Sangsad Bhaban — National Parliament Complex, Dhaka</div>
+        </aside>
+      </section>
+
+      <section class="section container">
+        <div class="quick-links">
+          <a class="quick-link searchable" data-keywords="999 emergency">Emergency 999</a>
+          <a class="quick-link searchable" data-keywords="333 govt information service">Govt Info 333</a>
+          <a class="quick-link searchable" data-keywords="109 women child">Women & Child 109</a>
+          <a class="quick-link searchable" data-keywords="106 anti corruption">ACC 106</a>
+          <a class="quick-link searchable" data-keywords="16263 health hotline">Health 16263</a>
+          <a class="quick-link searchable" data-keywords="citizen help desk support">Citizen Help Desk</a>
+        </div>
+      </section>
+
+      <section id="services" class="section container">
+        <div class="section-head">
+          <h2>Popular Government e-Services</h2>
+          <p>Frequently used national services organized for faster access.</p>
+        </div>
+        <div class="service-grid">
+          <article class="card searchable" data-keywords="birth death registration">
+            <h3>Birth & Death Registration</h3>
+            <p>Apply, verify, and update civil registration records.</p>
+            <a href="#">Open service →</a>
+          </article>
+          <article class="card searchable" data-keywords="passport visa immigration">
+            <h3>Passport & Visa</h3>
+            <p>Official passport, visa and immigration guidance.</p>
+            <a href="#">Open service →</a>
+          </article>
+          <article class="card searchable" data-keywords="nid national id election commission">
+            <h3>NID Services</h3>
+            <p>Identity verification, correction and NID support resources.</p>
+            <a href="#">Open service →</a>
+          </article>
+          <article class="card searchable" data-keywords="land mutation porcha khatian ভূমি">
+            <h3>Land Services (ভূমি)</h3>
+            <p>Land records, mutation and e-porcha resources.</p>
+            <a href="#">Open service →</a>
+          </article>
+          <article class="card searchable" data-keywords="education scholarship board exam">
+            <h3>Education Services</h3>
+            <p>Boards, scholarships and student service links.</p>
+            <a href="#">Open service →</a>
+          </article>
+          <article class="card searchable" data-keywords="trade license tax business">
+            <h3>Business & Trade</h3>
+            <p>Licensing, tax and compliance information.</p>
+            <a href="#">Open service →</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="ministries" class="section band">
+        <div class="container">
+          <div class="section-head">
+            <h2>Ministries & Government Directory</h2>
+            <p>Clean directory layout for key national institutions and ministries.</p>
+          </div>
+          <div class="directory-grid">
+            <article class="card searchable" data-keywords="president office বঙ্গভবন"><h3>President's Office</h3><p>Official presidency communications.</p></article>
+            <article class="card searchable" data-keywords="prime minister office"><h3>Prime Minister's Office</h3><p>National policy and strategic priorities.</p></article>
+            <article class="card searchable" data-keywords="cabinet division"><h3>Cabinet Division</h3><p>Circulars and governance updates.</p></article>
+            <article class="card searchable" data-keywords="public administration"><h3>Public Administration</h3><p>Civil administration resources.</p></article>
+            <article class="card searchable" data-keywords="health family welfare"><h3>Health & Family Welfare</h3><p>Public health and medical updates.</p></article>
+            <article class="card searchable" data-keywords="education ministry"><h3>Education Ministry</h3><p>Policy, boards and institutions.</p></article>
+            <article class="card searchable" data-keywords="agriculture কৃষি"><h3>Agriculture Ministry</h3><p>Farmer support and advisories.</p></article>
+            <article class="card searchable" data-keywords="ict division smart bangladesh"><h3>ICT Division</h3><p>Digital government and innovation.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="forms" class="section container">
+        <div class="section-head">
+          <h2>Forms, Downloads & Important Links</h2>
+          <p>Essential resources presented in a quick-access layout.</p>
+        </div>
+        <div class="panel-grid">
+          <article class="panel searchable" data-keywords="forms passport trade license land">
+            <h3>Popular Forms</h3>
+            <ul>
+              <li>Passport Application Form</li>
+              <li>Trade License Renewal Form</li>
+              <li>Birth Registration Correction Form</li>
+              <li>Land Mutation Request Form</li>
+            </ul>
+          </article>
+          <article class="panel searchable" data-keywords="district upazila union local portal">
+            <h3>Local Government Portals</h3>
+            <ul>
+              <li>District e-Portal Directory</li>
+              <li>Upazila Web Portals</li>
+              <li>Union Digital Center Contacts</li>
+              <li>City Corporation Services</li>
+            </ul>
+          </article>
+          <article class="panel searchable" data-keywords="election commission nbr brta bpsc">
+            <h3>Important National Links</h3>
+            <ul>
+              <li>Bangladesh Election Commission</li>
+              <li>National Board of Revenue</li>
+              <li>BRTA Service Portal</li>
+              <li>Bangladesh Public Service Commission</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="updates" class="section container">
+        <div class="section-head">
+          <h2>Latest Notices & Circulars</h2>
+          <p>Recent government notices, advisories and service updates.</p>
+        </div>
+        <div class="updates-list">
+          <article class="card searchable" data-keywords="mother language day circular">
+            <time>21 Feb 2026</time>
+            <h3>International Mother Language Day Observance Circular</h3>
+            <p>Guidelines for observance at all government institutions.</p>
+          </article>
+          <article class="card searchable" data-keywords="holiday office schedule">
+            <time>16 Feb 2026</time>
+            <h3>Public Office Schedule for Festival Holidays</h3>
+            <p>Service desk timing and essential office operation plan.</p>
+          </article>
+          <article class="card searchable" data-keywords="maintenance notice portal downtime">
+            <time>11 Feb 2026</time>
+            <h3>National Portal Maintenance Notice</h3>
+            <p>Temporary maintenance window for selected service forms.</p>
+          </article>
+        </div>
+        <p id="search-empty" class="search-empty" hidden>No results found. Try: passport, notice, ministry, land, education.</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <p>© 2026 Bangladesh National Portal — UI Prototype</p>
+          <p>Designed for clarity, accessibility, and fast service discovery.</p>
+        </div>
+        <div>
+          <p>National Helpline: 333</p>
+          <p>Emergency: 999 | Women & Child: 109</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
